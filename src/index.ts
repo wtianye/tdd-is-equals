@@ -1,4 +1,5 @@
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+import { isEqual } from "lodash";
+
 export function isEquals(a: any, b: any): boolean {
-  return a === b;
+  return isEqual(a, b);
 }
